@@ -13,14 +13,17 @@ def merge(array, p, q, r):
     n1 = q - p + 1
     n2 = r - q
 
-    L = [1000000]*(n1 + 1) 
-    R = [1000000]*(n2 + 1)
+    L = [] 
+    R = []
 
     for i in range(n1):
-        L[i] = array[p+i]
+        L.append(array[p+i])
     
     for j in range(n2):
-        R[j] = array[q+j+1]
+        R.append(array[q+j+1])
+    
+    L.append(math.inf)
+    R.append(math.inf)
 
     i, j = 0, 0
 
