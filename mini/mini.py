@@ -7,7 +7,7 @@ def Initialise(n):
     board = [[-1 for j in range(n)]for i in range(n)]
 
     # 8 possible moves
-    moves = [[2, 1], [2, -1], [-2, 1], [-2, -1], [-1, 2], [1, 2], [-1, -2], [1, -2]] 
+    moves = [[2, 1], [1, 2], [-1, 2], [-2, 1], [-2, -1],  [-1, -2], [1, -2], [2, -1]] 
 
     board[0][0] = 0 # first placement
     count = 1 #  variable for next position
